@@ -1,0 +1,100 @@
+
+.logo {
+  width: 40px;
+}
+/* ---------------------- */
+.loading-page {
+  background: #282e34;
+}
+
+#Layer_1{
+  width: 300px;
+  animation: animate 3s ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 3s;
+ }
+ .loading-page path {
+ 
+     stroke-width: 2px;
+     stroke-dasharray: 1900;
+     stroke-dashoffset: 1900;
+     animation: animate-loading 3s ease-in-out;
+     animation-iteration-count: 1;
+ }
+ 
+.loading-page .animation {
+     stroke-width: 2px;
+     stroke: white;
+     stroke-dasharray: 1900;
+     stroke-dashoffset: 1900;
+     animation: animate-loading 3s ease-in-out;
+     animation-iteration-count: 1;
+ }
+ .color{
+  fill: white;
+ }
+  @keyframes animate-loading {
+     0%{
+         stroke-dashoffset: 1900;
+         fill: transparent;
+         color: transparent;
+     }
+     
+     50%{
+         stroke-dashoffset: 0;
+     }
+     100%{
+         stroke-dashoffset: 1900;
+     }
+ }
+
+
+@keyframes animate {
+0%{
+  filter: drop-shadow(0 0 2em transition);
+}
+
+
+50%{
+  filter: drop-shadow(0 0 5em #0c7b31c9);
+}
+100%{
+  filter: drop-shadow(0 0 2em transition);
+}
+
+}
+
+.go-up{
+  animation: goDivUp 2s ease-in-out;
+  animation-iteration-count: 1;
+}
+
+@keyframes goDivUp {
+0%{
+  top: 0vh;
+}
+
+
+100%{
+  top: -100vh;
+}
+
+}
+/* ----------------------- */
+.downBg{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.075), #282e34);
+}
+
+#header{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+main{
+  background-color: #282e34;
+  top: 99vh;
+}
+
+.cards{
+  background-image: linear-gradient(#0c7b310a, #0c7b3124);
+}
